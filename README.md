@@ -6,6 +6,12 @@ This is a [Vite](https://vitejs.dev) project together with React.
 
 [Configuration](https://codesandbox.io/docs/projects/learn/setting-up/tasks) has been added to optimize it for [CodeSandbox Projects](https://codesandbox.io/p/dashboard).
 
+# Install
+```yarn install```
+
+# Run dev
+```yarn run dev```
+
 ## Resources
 
 - [CodeSandbox Projects — Docs](https://codesandbox.io/docs/projects)
