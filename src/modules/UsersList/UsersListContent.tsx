@@ -44,11 +44,9 @@ const UsersListContent: React.FC<Props> = ({ users }) => {
         <ListItem style={style} key={user.id} disablePadding>
           <ListItemButton onClick={toggleSelectedUser(user.id)}>
             <ListItemAvatar>
-              {/* Lazy loading seems not to work in Avatar component... */}
               <Avatar
                 alt={`${user.first_name} ${user.last_name}`}
                 src={user.avatar}
-                imgProps={{ loading: "lazy" }}
               />
             </ListItemAvatar>
             <ListItemText
