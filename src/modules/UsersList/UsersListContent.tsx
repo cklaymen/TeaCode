@@ -42,7 +42,7 @@ const UsersListContent: React.FC<Props> = ({ users }) => {
       const user = data[index];
       return (
         <ListItem style={style} key={user.id} disablePadding>
-          <ListItemButton onClick={toggleSelectedUser(user.id)}>
+          <ListItemButton onClick={toggleSelectedUser(user.id)} >
             <ListItemAvatar>
               <Avatar
                 alt={`${user.first_name} ${user.last_name}`}
@@ -53,7 +53,7 @@ const UsersListContent: React.FC<Props> = ({ users }) => {
               primary={`${user.first_name} ${user.last_name}`}
               secondary={user.email}
             />
-            <Checkbox edge="end" checked={selected.indexOf(user.id) !== -1} />
+            <Checkbox edge="end" checked={selected.indexOf(user.id) !== -1} disableRipple />
           </ListItemButton>
         </ListItem>
       );
